@@ -201,3 +201,17 @@ mutation{
 
 - Can be viewed at (https://editor.swagger.io/)
 - Paste [JSON](https://github.com/jassingh94/CabBooker/resources/swagger.json) 
+
+
+## Pictorial Representations 
+
+> Adding a ride 
+
+![image](https://user-images.githubusercontent.com/63552793/128639407-9b5b208a-5d4b-4df5-9aa8-21847c400759.png)
+
+
+> Viewing past rides 
+
+![image](https://user-images.githubusercontent.com/63552793/128639422-01e0ea40-5547-419f-aeeb-90c71b0d768a.png)
+
+
