@@ -1,0 +1,304 @@
+{
+    "openapi": "3.0.0",
+    "servers": [
+      {
+        "url": ""
+      }
+    ],
+    "info": {
+      "description": "This documentation specifies a brief overview of all the Apis in the Cab Booker service",
+      "version": "1.0.0",
+      "title": "Cab Booker Apis",
+      "termsOfService": "",
+      "contact": {
+        "email": "Jaspreet.dcsa@gmail.com",
+        "name": "Jaspreet Singh Bindra"
+      }
+    },
+    "tags": [
+      {
+        "name": "Session",
+        "description": "Apis, that work with user session"
+      },
+      {
+        "name": "View Rides",
+        "description": "Api to view rides"
+      },
+      {
+        "name": "Book ride",
+        "description": "Api to book ride"
+      }
+    ],
+    "paths": {
+      "/": {
+        "summary": "GraphQL UI",
+        "description": "Used to : \n- query for rides \n- mutate / book rides",
+        "x-temp": {
+          "tags": [
+            "pet"
+          ],
+          "summary": "Interact with GraphQL UI",
+          "description": "",
+          "operationId": "/",
+          "responses": {
+            "200": {
+              "description": "Description"
+            },
+            "201": {
+              "description": "Result"
+            }
+          },
+          "security": [],
+          "parameters": [
+            {
+              "name": "query",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "default": "\"\""
+              },
+              "description": "Query, is the graphql query tring",
+              "allowEmptyValue": true
+            },
+            {
+              "name": "username",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Username, can be used to specify the username of the user using the application",
+              "allowEmptyValue": true
+            },
+            {
+              "name": "password",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Password, is the password for the username given",
+              "allowEmptyValue": true
+            }
+          ]
+        },
+        "get": {
+          "summary": "Interact with GraphQL UI",
+          "description": "",
+          "parameters": [
+            {
+              "name": "query",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "default": "\"\""
+              },
+              "description": "Query, is the graphql query tring",
+              "allowEmptyValue": true
+            },
+            {
+              "name": "username",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Username, can be used to specify the username of the user using the application",
+              "allowEmptyValue": true
+            },
+            {
+              "name": "password",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Password, is the password for the username given",
+              "allowEmptyValue": true
+            }
+          ],
+          "operationId": "/",
+          "responses": {
+            "200": {
+              "description": "Description"
+            },
+            "201": {
+              "description": "Result"
+            }
+          },
+          "tags": [
+            "View Rides",
+            "Book ride"
+          ]
+        }
+      },
+      "/graphql": {
+        "summary": "GraphQL UI",
+        "description": "Used to : \n- query for rides \n- mutate / book rides",
+        "x-temp": {
+          "tags": [
+            "pet"
+          ],
+          "summary": "Interact with GraphQL UI",
+          "description": "",
+          "operationId": "/",
+          "responses": {
+            "200": {
+              "description": "Description"
+            },
+            "201": {
+              "description": "Result"
+            }
+          },
+          "security": [],
+          "parameters": [
+            {
+              "name": "query",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "default": "\"\""
+              },
+              "description": "Query, is the graphql query tring",
+              "allowEmptyValue": true
+            },
+            {
+              "name": "username",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Username, can be used to specify the username of the user using the application",
+              "allowEmptyValue": true
+            },
+            {
+              "name": "password",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Password, is the password for the username given",
+              "allowEmptyValue": true
+            }
+          ]
+        },
+        "get": {
+          "summary": "Interact with GraphQL (Without UI)",
+          "description": "",
+          "parameters": [
+            {
+              "name": "query",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "default": "\"\""
+              },
+              "description": "Query, is the graphql query tring",
+              "allowEmptyValue": true
+            },
+            {
+              "name": "username",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Username, can be used to specify the username of the user using the application",
+              "allowEmptyValue": true
+            },
+            {
+              "name": "password",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Password, is the password for the username given",
+              "allowEmptyValue": true
+            }
+          ],
+          "operationId": "/graphql",
+          "responses": {
+            "200": {
+              "description": "Description"
+            },
+            "201": {
+              "description": "Result"
+            }
+          },
+          "tags": [
+            "View Rides",
+            "Book ride"
+          ]
+        }
+      },
+      "/login": {
+        "summary": "Set session for user",
+        "description": "Can be used to set session for a user",
+        "get": {
+          "summary": "",
+          "description": "",
+          "parameters": [
+            {
+              "name": "username",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Username of user"
+            },
+            {
+              "name": "password",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Password of user"
+            }
+          ],
+          "operationId": "/login",
+          "responses": {
+            "default": {
+              "description": "Default response"
+            }
+          },
+          "tags": [
+            "Session"
+          ]
+        }
+      },
+      "/logout": {
+        "summary": "Logs user out",
+        "get": {
+          "summary": "",
+          "description": "",
+          "parameters": [],
+          "operationId": "/logout",
+          "responses": {
+            "default": {
+              "description": "Default response"
+            }
+          },
+          "tags": [
+            "Session"
+          ]
+        }
+      }
+    },
+    "components": {
+      "schemas": {},
+      "requestBodies": {},
+      "securitySchemes": {},
+      "links": {},
+      "callbacks": {}
+    },
+    "security": []
+  }
