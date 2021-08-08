@@ -32,12 +32,14 @@ async function run() {
             {
                 "name": "Driver 1",
                 "location": "A",
-                "car": "Innova"
+                "car": "Innova",
+                "gender": "male"
             },
             {
                 "name": "Driver 2",
                 "location": "B",
-                "car": "Innova"
+                "car": "Innova",
+                "gender": "male"
             }]),
         colRiders.insertMany([
             {
