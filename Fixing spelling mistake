@@ -7,7 +7,7 @@ Cab booker uses the power of graphql to enable a interactive UI for cab booking
 
 - Note - **Will break unexpectedly due to use of Optional Chaining, If using Nodejs version 12 or below**
 
-## Modules user 
+## Modules used
 - express
 - graphql
 - mongoose
